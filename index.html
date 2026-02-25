@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavidharani · portfolio</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+
+    <!-- BOOTING SCREEN -->
+    <div id="boot-screen">
+        <div class="boot-crt"></div>
+        <div class="floating-box">
+            <div class="typing-line">Initializing Kavidharani's portfolio</div>
+            <div class="load-status" id="loadStatus">loading Profile, skills, ...</div>
+            <div class="load-bar"><div class="load-fill" id="loadFill"></div></div>
+            <div class="load-counter" id="loadCounter">0%</div>
+        </div>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <div id="main-page">
+        <!-- Sticky Navigation -->
+        <nav id="navbar">
+            <div class="nav-left">
+                <div class="logo">K</div>
+                <span>Kavidharani K R</span>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#internship">Internship</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- PROFILE / ABOUT SECTION -->
+        <section id="profile">
+            <h2 class="section-title">Profile</h2>
+            <div class="about-container">
+                <div class="about-box about-left">
+                    <img src="Profile.png" alt="Kavidharani" id="profile-img">
+                </div>
+                <div class="about-box about-right">
+                    <div class="greeting">Hii .. Welcome to my Portfolio</div>
+                    <div class="about-text">
+                        <p><strong>I'm Kavidharani</strong> — a passionate CS undergrad with a love for building smart systems.</p>
+                        <p>🔍 Interested in Cybersecurity, AI, and software that makes a difference.</p>
+                        <p>🌱 Always learning, always coding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+
+        <!-- EDUCATION (book) -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="book-section">
+                <div class="book-wrapper" id="bookWrapper">
+                    <div class="book-cover">
+                        <h2>📘 Education</h2>
+                    </div>
+                    <div class="book-open">
+                        <div class="page">
+                            <h3>🎓 College</h3>
+                            <p>B.E Computer Science<br>Government College of Engineering, Salem<br>Pursuing 3rd year<br><strong>CGPA (till 4th sem): 8.8</strong></p>
+                        </div>
+                        <div class="page">
+                            <h3>🏫 Schooling</h3>
+                            <p>Shri Swamy Matric Hr. Sec. School<br>Higher secondary: <strong>88%</strong></p>
+                        </div>
+                    </div>
+                    <button class="close-book" id="closeBookBtn">close</button>
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skills-left">
+                    <div class="skill-topic active" data-skill="prog">Programming Skills</div>
+                    <div class="skill-topic" data-skill="db">DataBase Management</div>
+                    <div class="skill-topic" data-skill="tools">Essential Tools</div>
+                </div>
+                <div class="skills-right" id="skillsRight"></div>
+            </div>
+        </section>
+        <div class="separator"></div>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="carousel">
+                <button class="arrow left-arrow">←</button>
+                <div class="carousel-inner">
+                    <div class="carousel-track" id="projectTrack">
+                        <div class="project-card">
+                            <div class="project-image"><img src="Pro1.png" alt="cyber threat detection"></div>
+                            <h3>Cyber Threat Detection</h3>
+                            <p>Anomaly detection in network traffic using ML (Python). Visualized attack patterns.</p>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image"><img src="Pro2.png" alt="hostel facial recognition"></div>
+                            <h3>Hostel Facial Recognition</h3>
+                            <p>Webcam check‑in system with database. Simple UI for staff.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right-arrow">→</button>
+            </div>
+        </section>
+        <div class="separator"></div>
+
+        <!-- INTERNSHIP -->
+        <section id="internship">
+            <h2 class="section-title">Internship</h2>
+            <div class="monitor-wrap">
+                <div class="monitor">
+                    <p><strong>Insourse Design Tech</strong><br>Software Developer Intern<br>21.06.2025 – 01.07.2025<br>Worked on internal tools & software prototypes.</p>
+                </div>
+                <div class="rockets">
+                    <div class="rocket rocket1">🚀</div>
+                    <div class="rocket rocket2">🛸</div>
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h3>Let's talk</h3>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    <p><i class="fas fa-envelope"></i> kavidharaniramanathan@gmail.com</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/kavidharani</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tamilnadu, India</p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" placeholder="Your name">
+                        <input type="email" placeholder="Your email">
+                        <textarea rows="4" placeholder="Message"></textarea>
+                        <button type="button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div><strong>Kavidharani K R</strong><br>Computer Science | Software Developer | Cybersecurity Enthusiast</div>
+            <div>2026 reserved</div>
+        </footer>
+
+        <!-- CHATBOT -->
+        <div id="chatbot">
+            <div class="chat-icon" id="chatIcon"><i class="fas fa-robot"></i></div>
+            <div class="chat-window" id="chatWindow">
+                <div class="chat-header">🤖 Kavi's Assistant</div>
+                <div class="chat-msgs" id="chatMsgs">
+                    <div class="chat-msg bot">Hi! I'm Kavidharani's virtual assistant. Ask me anything from her resume.</div>
+                </div>
+                <div class="chat-input-area">
+                    <input class="chat-input" id="chatInput" placeholder="Type a question...">
+                    <button id="sendChat">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
